@@ -14,16 +14,17 @@ const CharactersPage = () => {
     const fetchCharacters = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(
-          "http://localhost:5000/api/characters",
-          {
-            params: {
-              limit: 100,
-              skip: (page - 1) * 100,
-              name: search,
-            },
-          }
-        );
+        const API_URL =
+          process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
+        const response = await axios.get(`${API_URL}/api/characters`, {
+          params: {
+            limit: 100,
+            skip: (page - 1) * 100,
+            name: search,
+          },
+        });
+
         setCharacters(response.data.results);
         setLoading(false);
       } catch (err) {

@@ -14,7 +14,10 @@ const ComicsPage = () => {
     const fetchComics = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5000/api/comics", {
+        const API_URL =
+          process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
+        const response = await axios.get(`${API_URL}/api/comics`, {
           params: {
             limit: 100,
             skip: (page - 1) * 100,
