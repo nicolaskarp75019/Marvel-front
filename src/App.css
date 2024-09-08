@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Benton Sans Extra Comp Black";
+  src: url("./assets/fonts/BentonSansExtraCompBlack.woff2") format("woff2"),
+    url("./assets/fonts/BentonSansExtraCompBlack.woff") format("woff"),
+    url("./assets/fonts/BentonSansExtraCompBlack.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Benton Sans Extra Comp Black", Arial, sans-serif;
+  background-color: black;
+  color: black;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Benton Sans Extra Comp Black", Arial, sans-serif;
+}
+
+p,
+a,
+li,
+span {
+  font-family: "Benton Sans Extra Comp Black", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d50010;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #d0191f;
+}
+
+nav img {
+  height: 50px;
+  margin: 0 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  color: grey;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav img {
+    margin: 10px 0;
+  }
+}
+
+.homepage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-text {
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #e62429;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 20px;
+  color: #a5a5a5;
+}
+
+.hero-image img {
+  background-color: #0d0d0d;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  width: 400px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 80%;
+  }
+}
