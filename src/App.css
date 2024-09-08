@@ -6,15 +6,18 @@
 
 @font-face {
   font-family: "Benton Sans Extra Comp Black";
-  src: url("./assets/fonts/BentonSansExtraCompBlack.woff2") format("woff2"),
-    url("./assets/fonts/BentonSansExtraCompBlack.woff") format("woff"),
-    url("./assets/fonts/BentonSansExtraCompBlack.ttf") format("truetype");
+  src: url("./assets/fonts/BentonSans Comp Black/BentonSansExtraCompBlack.woff2")
+      format("woff2"),
+    url("./assets/fonts/BentonSans Comp Black/BentonSansExtraCompBlack.woff")
+      format("woff"),
+    url("./assets/fonts/BentonSans Comp Black/BentonSansExtraCompBlack.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "Benton Sans Extra Comp Black", Arial, sans-serif;
+  font-family: "Benton Sans Extra Comp Black", sans-serif;
   background-color: black;
   color: black;
   line-height: 1.6;
