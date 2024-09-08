@@ -11,7 +11,7 @@ const Header = () => {
         <li>
           <Link to="/characters">Characters</Link>
         </li>
-        <img src="images/Marvel_Studios_logo.png" alt="logo-marvel" />
+        <img src="/images/Marvel_Studios_logo.png" alt="logo-marvel" />
         <li>
           <Link to="/comics">Comics</Link>
         </li>

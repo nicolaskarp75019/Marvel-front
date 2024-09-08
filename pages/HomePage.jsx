@@ -11,7 +11,7 @@ const HomePage = () => {
           </p>
         </div>
         <div className="hero-image">
-          <img src="images/spiderman 2.jpg" alt="Spider-Man" />
+          <img src="/images/spiderman 2.jpg" alt="Spider-Man" />
         </div>
       </header>
     </div>
